@@ -1,2 +1,2 @@
 # Work-Order-Form
-A Work Order Form for a Solar PV Asset Management Application using HTML, CSS, Figma, and basic JavaScript.
+Worked on developing a Work Order Form for a Solar PV Asset Management Application using HTML, CSS, Figma, and basic JavaScript. EnerMAN will integrate this form into its existing asset management tool to collect information from Solar PV plants. This data will aid in performance analysis, preventive analysis, and more. As part of this project, gained insights into how asset management tools function in the Solar PV industry, including reference designs and specifications.
