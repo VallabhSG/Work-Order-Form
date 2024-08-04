@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Order Details</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="nav-top">
+        <img src="logo.png" alt="EnerMAN Logo" class="logo">
+    </div>
+    <div class="container">
+        <div class="nav-left">
+            <div class="nav-buttons">
+                <button class="nav-btn"><img src="icon1.png" alt="Icon 1"></button>
+                <button class="nav-btn"><img src="icon2.png" alt="Icon 2"></button>
+                <button class="nav-btn"><img src="icon3.png" alt="Icon 3"></button>
+                <button class="nav-btn"><img src="icon4.png" alt="Icon 4"></button>
+                <button class="nav-btn"><img src="icon5.png" alt="Icon 5"></button>
+                <button class="nav-btn"><img src="icon6.png" alt="Icon 6"></button>
+            </div>
+        </div>        
+        <div class="main-content">
+            <header class="header">
+                <h1>Work Order Details</h1>
+                <div class="header-buttons">
+                    <button class="header-btn add">
+                        <img src="add-icon (2).png" alt="Add">
+                    </button>
+                    <button class="header-btn edit">
+                        <img src="edit-icon.png" alt="Edit">
+                    </button>
+                    <button class="header-btn save">
+                        <img src="save-icon.png" alt="Save">
+                    </button>
+                </div>                
+            </header>
+            <div class="content">
+                <div class="form-section">
+                    <form id="taskForm">
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option value="maintenance">Maintenance</option>
+                            <option value="irradience">Irradience</option>
+                            <option value="corrective">Corrective</option>
+                            <option value="scheduling">Scheduling</option>
+                        </select>
+                        
+                        <label for="activity">Activity</label>
+                        <input type="text" id="activity" name="activity" placeholder="Steps">
+                        
+                        <div class="schedule">
+                            <div class="schedule-item">
+                                <label for="scheduled-start">Scheduled Start</label>
+                                <input type="datetime-local" id="scheduled-start" name="scheduled-start" value="2023-02-03T00:00">
+                            </div>
+                            <div class="schedule-item">
+                                <label for="scheduled-end">Scheduled End</label>
+                                <input type="datetime-local" id="scheduled-end" name="scheduled-end" value="2023-03-03T00:00">
+                            </div>
+                        </div>
+                        
+                        <label for="priority">Priority</label>
+                        <select id="priority" name="priority">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                        
+                        <label for="assigned-to">Assigned To</label>
+                        <input type="text" id="assigned-to" name="assigned-to" placeholder="Field Engineer">
+                        
+                        <label for="approver">Approver</label>
+                        <input type="text" id="approver" name="approver" placeholder="Manager">
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="cancel">Cancel</button>
+                            <button type="submit" id="submitBtn"  class="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="task-section">
+                    <h2>Tasks</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Task ID</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Remarks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maintenance</td>
+                                <td>313515</td>
+                                <td class="priority high">High</td>
+                                <td>Resolved</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Irradience</td>
+                                <td>135562</td>
+                                <td class="priority high">High</td>
+                                <td>On-Going</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Corrective</td>
+                                <td>347524</td>
+                                <td class="priority high">High</td>
+                                <td>Unresolved</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Scheduling</td>
+                                <td>542567</td>
+                                <td class="priority medium">Medium</td>
+                                <td>Postponed</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Maintenance</td>
+                                <td>246685</td>
+                                <td class="priority low">Low</td>
+                                <td>On-Hold</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
